@@ -1,4 +1,4 @@
-package creative
+package creative_sf
 
 import "fmt"
 
@@ -39,7 +39,7 @@ func (s *SimpleFactory) CreateFruit(name string) Fruit {
 }
 
 // 业务逻辑
-func logicsSF() {
+func LogicsSF() {
 	factory := new(SimpleFactory)
 
 	apple := factory.CreateFruit("apple")
