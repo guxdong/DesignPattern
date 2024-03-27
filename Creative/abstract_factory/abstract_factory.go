@@ -103,7 +103,7 @@ func (u *USFactory) CreatePear() AbstractPear {
 }
 
 // 业务逻辑
-func LogicsAF() {
+func Logics() {
 	var absFactory AbstractFactory
 	var apple AbstractApple
 	var pear AbstractPear
