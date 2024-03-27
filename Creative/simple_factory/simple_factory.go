@@ -39,7 +39,7 @@ func (s *SimpleFactory) CreateFruit(name string) Fruit {
 }
 
 // 业务逻辑
-func LogicsSF() {
+func Logics() {
 	factory := new(SimpleFactory)
 
 	apple := factory.CreateFruit("apple")
