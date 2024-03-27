@@ -53,7 +53,7 @@ func (p *PearFactory) CrearteFruit() Fruit {
 }
 
 // 业务逻辑
-func LogicsFM() {
+func Logics() {
 	var absFactory AbstractFactory
 	absFactory = new(AppleFactory)
 	var fruit Fruit
