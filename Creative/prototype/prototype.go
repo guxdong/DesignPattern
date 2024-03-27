@@ -1,4 +1,4 @@
-package main
+package prototype
 
 import (
 	"fmt"
@@ -33,7 +33,7 @@ func (p *ConcretePrototype) Clone() Prototype {
 	}
 }
 
-func main() {
+func Logics() {
 	// 创建原型对象
 	prototype := &ConcretePrototype{
 		Name: "Prototype",
