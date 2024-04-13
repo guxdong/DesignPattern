@@ -18,7 +18,9 @@ type HouseProxy struct {
 	houseSeller HouseSeller
 }
 
-func NewHouseProxy(houseSeller HouseSeller) *HouseProxy {
+func NewHouseProxy() *HouseProxy {
+	// 在代理对象中隐藏实际的目标对象，实现访问控制
+	houseSeller := &HouseOwner{}
 	return &HouseProxy{
 		houseSeller: houseSeller,
 	}
@@ -42,6 +44,6 @@ func (h *HouseProxy) SellHouse(address string, buyer string) {
 }
 
 func Logics() {
-	proxy := NewHouseProxy(&HouseOwner{})
+	proxy := NewHouseProxy()
 	proxy.SellHouse("北京市海淀区中关村大街，2号院1号楼4单元502室", "李四")
 }
